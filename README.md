@@ -1,5 +1,4 @@
-# ![image](https://github.com/julien-muke/mygitactions/assets/110755734/6f563446-e59e-44c5-b977-b0e16ddc7edc)
-     Github Actions CI/CD
+# ![image](https://github.com/julien-muke/mygitactions/assets/110755734/6f563446-e59e-44c5-b977-b0e16ddc7edc) Github Actions CI/CD
 
 
 ## 🤖 Introduction
