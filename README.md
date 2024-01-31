@@ -22,8 +22,9 @@ Let's go over the terminology you need to know to understand a GitHub actions wo
 
 * On the event that someone pushes new code it's going to run the job Super-lint
 * That job is going to run on ubuntu container hosted on github.com
-* And then it's going to go through two steps:
-  1. The first step is to check out the code
-  2. the next step is to run the linter 
+* And then it's going to go through two steps:tThe first step is to check out the code and the next step is to run the linter 
   
 NOTE: Linter is it's just something that we use to check to make sure that our code is conforming to certain standards super linter is made up of multiple linters so it doesn't matter which code you use in your repository superlinter is going to understand it and make sure you conform to the standards of that language.
+
+
+## Step 1️⃣ : Github actions Lab - Creating Repo and setting up Action
