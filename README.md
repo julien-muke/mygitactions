@@ -27,4 +27,4 @@ Let's go over the terminology you need to know to understand a GitHub actions wo
 NOTE: Linter is it's just something that we use to check to make sure that our code is conforming to certain standards super linter is made up of multiple linters so it doesn't matter which code you use in your repository superlinter is going to understand it and make sure you conform to the standards of that language.
 
 
-## Step 1️⃣ : Github actions Lab - Creating Repo and setting up Action
+## Step 1️⃣ : GitHub actions Lab - Creating Repository and setting up Action
