@@ -6,9 +6,9 @@
 
 ## 🤖 Introduction
 
-Github Actions is the built-in CI/CD tool for Github, CI/CD stands for Continuous Integration and Continuous Delivery, essentially it allows us to automate the testing of our code to make sure it meets certain criteria after all the tests are passed you can enable actions to automate the delivery of your code this can significantly reduce the time it takes for you to deliver updates to your application which allows developers to focus more of their time on the code itself.
+GitHub Actions is the built-in CI/CD tool for GitHub, CI/CD stands for Continuous Integration and Continuous Delivery, essentially it allows us to automate the testing of our code to make sure it meets certain criteria after all the tests are passed you can enable actions to automate the delivery of your code this can significantly reduce the time it takes for you to deliver updates to your application which allows developers to focus more of their time on the code itself.
 
-In this tutorial, i'm going to go over all the theory you need to know to understand the github action workflow.
+In this tutorial, i'm going to go over all the theory you need to know to understand the GitHub action workflow.
 
 ## 	📝  Overview
 
