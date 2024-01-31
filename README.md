@@ -15,6 +15,15 @@ In the lab portion of this tutorial we'll go over how to implement our own GitHu
 
 ## GitHub actions workflow file walkthrough
 
+Let's go over the terminology you need to know to understand a GitHub actions workflow file so we have a workflow yaml file GitHub actions workflow file walkthrough which specifies `events` `jobs` `runners` `steps` and `actions`.
 
 ![Blank diagram-13-2](https://github.com/julien-muke/mygitactions/assets/110755734/c3a3543d-1288-445d-bfb6-8808ff2acd06)
 
+
+* On the event that someone pushes new code it's going to run the job Super-lint
+* That job is going to run on ubuntu container hosted on github.com
+* And then it's going to go through two steps:
+  1. The first step is to check out the code
+  2. the next step is to run the linter 
+  
+NOTE: Linter is it's just something that we use to check to make sure that our code is conforming to certain standards super linter is made up of multiple linters so it doesn't matter which code you use in your repository superlinter is going to understand it and make sure you conform to the standards of that language.
