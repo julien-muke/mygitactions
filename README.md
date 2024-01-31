@@ -1,4 +1,4 @@
-# ![Alt text](image.png)     AWS WebSocket API (Real-time chat application using python)
+# ![Alt text](image.png)     Github Actions CI/CD
 
 
 ## 🤖 Introduction
