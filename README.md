@@ -6,11 +6,13 @@
 
 ## 🤖 Introduction
 
-In this tutorial we will discuss about websocket APIs web circuit APIs support two-way communication that is both the users and the back-end can send messages back and forth once connected so it's used in real-time applications like charts broadcast messages or real-time dashboards you can create websocket APIs in AWS using aws API Gateway Service.
+Github Actions is the built-in CI/CD tool for Github, CI/CD stands for Continuous Integration and Continuous Delivery, essentially it allows us to automate the testing of our code to make sure it meets certain criteria after all the tests are passed you can enable actions to automate the delivery of your code this can significantly reduce the time it takes for you to deliver updates to your application which allows developers to focus more of their time on the code itself.
 
-## 	📝 Hands-on Overview
+In this tutorial, i'm going to go over all the theory you need to know to understand the github action workflow.
 
-The sample use case that we are going to see today is a real-time chat application with few components:
+## 	📝  Overview
+
+In the lab portion of this tutorial we'll go over how to implement our own Github action and implement a Linter that will run checks against our code to make sure that it meets specific criteria.
 
 * First is obviously the API gateway service itself which is used to set up the application 
 * And will be connected to three different lambdas to perform three different actions to establish connection to send messages  
