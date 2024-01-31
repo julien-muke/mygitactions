@@ -11,3 +11,10 @@ GitHub Actions is the built-in CI/CD tool for GitHub, CI/CD stands for Continuou
 ## 📝 Overview
 
 In the lab portion of this tutorial we'll go over how to implement our own GitHub action and implement a Linter that will run checks against our code to make sure that it meets specific criteria.
+
+
+## GitHub actions workflow file walkthrough
+
+
+![Blank diagram-13-2](https://github.com/julien-muke/mygitactions/assets/110755734/c3a3543d-1288-445d-bfb6-8808ff2acd06)
+
