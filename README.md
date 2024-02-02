@@ -28,3 +28,58 @@ NOTE: Linter is it's just something that we use to check to make sure that our c
 
 
 ## Step 1️⃣ : GitHub actions Lab - Creating Repository and setting up Action
+
+1. Create a new repository
+
+Navigate to your GitHub account (if you don't have one, go to github.com and create an account), go to "Repository" and click "New"
+
+![Screenshot 2024-01-31 at 13 14 02](https://github.com/julien-muke/mygitactions/assets/110755734/38952beb-aae7-4a4f-aac2-766ed417fb3c)
+
+
+2. We can call this whatever we want, i'll name it `mygetactions` and then scroll down and let's add a README.md file just to have a file to work with and then "Create repository"
+
+
+![Screenshot 2024-01-31 at 13 16 31](https://github.com/julien-muke/mygitactions/assets/110755734/d2eebbf3-1f75-49f6-a011-5f9554554519)
+
+
+
+3. The next thing we want to do is create a workflow, to do that just go "Add file" and click "Create new file"
+
+
+![Screenshot 2024-01-31 at 13 17 25](https://github.com/julien-muke/mygitactions/assets/110755734/15498530-ee16-4c4e-833b-1950864db961)
+
+
+
+4. We need to be very specific with our naming, the proper directory structure for your workflow files needs to be first `.github/workflows` and then you can name your file whatever you want, i'll name it `superlinter.yml` 
+
+
+![Screenshot 2024-01-31 at 13 20 50](https://github.com/julien-muke/mygitactions/assets/110755734/22226004-c25a-4514-88dc-cf080ef2a60c)
+
+
+
+
+4. Then i'm going to copy and paste the code, you can see this is the code that we went over earlier, basically it's listening for a `push` event and when the push event happens it's going to first check out our code and then run the superlinter against it to make sure that it conforms to the linting standards
+
+```yml
+    name: Super-Linter
+
+on: push
+
+jobs:
+  super-lint:
+    name: Lint code base
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run Super-Linter
+        uses: github/super-linter@v4
+        env:
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+```
+
+
+![Screenshot 2024-01-31 at 13 21 59](https://github.com/julien-muke/mygitactions/assets/110755734/ef603b83-7ec9-488d-95cf-8f559a8a1b1f)
