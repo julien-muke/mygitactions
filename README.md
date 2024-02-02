@@ -81,3 +81,118 @@ jobs:
 
 
 ![Screenshot 2024-01-31 at 13 21 59](https://github.com/julien-muke/mygitactions/assets/110755734/ef603b83-7ec9-488d-95cf-8f559a8a1b1f)
+
+
+5. We can go ahead and commit, you can create a new branch or just commit to the main branch i'm going to commit to the main branch
+
+
+![Screenshot 2024-01-31 at 13 23 36](https://github.com/julien-muke/mygitactions/assets/110755734/85fa7f14-7ff6-4bb6-944e-6fd2d04361a6)
+
+
+NOTE: This directory structure needs to be exactly like this if your workflow is not triggering it's probably because the directory structure isn't named correctly
+
+
+6. Let's hop on back to the main repository click "Code" and you should notice that there's this little status icon and you can see it's yellow, basically what this is saying is it's currently running the workflow and checking the code if all the checks pass then this is going to turn green, if the checks fail then it's gonna turn red, you can actually click on that or you can click on this "Actions" tab
+
+
+![Screenshot 2024-01-31 at 13 25 34](https://github.com/julien-muke/mygitactions/assets/110755734/cd788f0f-52a3-46fa-859b-85bcd4cabc3f)
+
+
+7.  It will take few seconds and run the workflow, and the workflow that it's running is super linter, it will:
+
+* Set up the job
+* Pull the code from GitHub Super Linter
+* Checkout the code
+* Run Super-Linter
+* Post Chechout code
+* Complete job
+
+
+![Screenshot 2024-01-31 at 13 30 18](https://github.com/julien-muke/mygitactions/assets/110755734/22dbf8bc-ccf3-413a-a00c-3988ff684231)
+
+
+8. If we head on back to code here we can see we get a nice little check mark to show that all the workflow checks have passed
+
+
+
+![Screenshot 2024-01-31 at 13 32 24](https://github.com/julien-muke/mygitactions/assets/110755734/135b4f2c-5832-48dd-bad6-7dafeb963db9)
+
+
+
+NOTE: This is another really cool thing that you can actually use downstream you could have your servers monitor the
+GitHub API and just check the status of the repository, if the status was a green check mark it could automatically go to that
+repository and pull down your code and implement it into staging or production or whatever you want.
+
+
+## Step 2️⃣ : Let's test and push some code that we know is going to generate some Linting Errors
+
+1. Go to "Add file" then click "Create new file"
+2. Let's name it `main.py`
+3. Copy and paste this simple python code below:
+
+NOTE: There's some syntax problems with this code that is not going to pass the Linting
+check (for example, there should actually be two lines between each function, the code style isn't very consistent this is what's considered messy code and the Linter is not gonna like, it it's gonna fail it )
+
+
+```py
+    def hello():
+         print("hi")
+
+def bye():
+  print("bye")
+
+print(hello())
+```
+
+4. Let's go ahead and save this commit it and watch to see what the Linter does 
+5. Let's refresh and we can see that it is triggered now if we just click the yellow icon, you can it's in progress check and we can just go details
+
+
+![Screenshot 2024-01-31 at 13 43 23](https://github.com/julien-muke/mygitactions/assets/110755734/74d6d885-080c-463f-a061-0d54ef884a2d)
+
+
+
+6. Our Super-Linter has run and we can see that there is an error in our workflow right here on the run Super-Linter, let's go into it and i'll show you sort of how to troubleshoot these errors
+
+
+![Screenshot 2024-01-31 at 13 56 47](https://github.com/julien-muke/mygitactions/assets/110755734/c789cb1f-b460-4971-ab6d-c0d6bdc594eb)
+
+
+7. Basically the code and the `+` are the lines that it would add and the `-` are the lines it would remove.
+
+
+![Screenshot 2024-01-31 at 13 56 47](https://github.com/julien-muke/mygitactions/assets/110755734/6caa73d5-10b2-4596-9637-f784d2660780)
+
+
+8. Let's check and fix the Errors, go to "Edit"
+
+```py
+    def hello():
+    print("hi")
+
+
+def bye():
+    print("bye")
+
+
+print(hello())
+```
+
+
+9. We can see that everything passed, if you go to actions and check the details of the latest job and you can see that the Super Linter ran and everything looks good.
+
+
+![Screenshot 2024-01-31 at 14 06 26](https://github.com/julien-muke/mygitactions/assets/110755734/3f3ee412-ad28-4c1c-a800-c10912a825a3)
+
+
+10. Let's just explore the GitHub actions a little bit more we'll go up to "Actions" and you can see that we have a history of all our workflow jobs, first one was our first run successfully and other one was the second run we added the python file with the bad formatting and then last one after that we fixed the errors.
+
+
+![Screenshot 2024-01-31 at 14 08 52](https://github.com/julien-muke/mygitactions/assets/110755734/ad2fac8e-8628-48be-8fa2-4584d2c69fa3)
+
+
+
+NOTE: if you wanted to go through a guided setup instead of just writing your file from scratch like we did you can go new workflow right here and you can see that there's a lot of templated options. There's a marketplace with a lot of canned workflows that you can just grab and then you can just modify the file to meet your needs so that's a really good option
+
+
+![Screenshot 2024-01-31 at 14 10 08](https://github.com/julien-muke/mygitactions/assets/110755734/eecefbde-8658-45df-af8d-f723bb56c33f)
