@@ -49,9 +49,7 @@ Navigate to your GitHub account (if you don't have one, go to github.com and cre
 ![Screenshot 2024-01-31 at 13 17 25](https://github.com/julien-muke/mygitactions/assets/110755734/15498530-ee16-4c4e-833b-1950864db961)
 
 
-
-4. We need to be very specific with our naming, the proper directory structure for your workflow files needs to be first `.github/workflows` and then you can name your file whatever you want, i'll name it `superlinter.yml` 
-
+4. We need to be very specific with our naming, the proper directory structure for your workflow files needs to be first `.github/workflows` and then you can name your file whatever you want, i'll name it `superlinter.yml`
 
 ![Screenshot 2024-01-31 at 13 20 50](https://github.com/julien-muke/mygitactions/assets/110755734/22226004-c25a-4514-88dc-cf080ef2a60c)
 
@@ -61,7 +59,7 @@ Navigate to your GitHub account (if you don't have one, go to github.com and cre
 4. Then i'm going to copy and paste the code, you can see this is the code that we went over earlier, basically it's listening for a `push` event and when the push event happens it's going to first check out our code and then run the superlinter against it to make sure that it conforms to the linting standards
 
 ```yml
-    name: Super-Linter
+name: Super-Linter
 
 on: push
 
