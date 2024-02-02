@@ -96,7 +96,7 @@ NOTE: This directory structure needs to be exactly like this if your workflow is
 ![Screenshot 2024-01-31 at 13 25 34](https://github.com/julien-muke/mygitactions/assets/110755734/cd788f0f-52a3-46fa-859b-85bcd4cabc3f)
 
 
-7.  It will take few seconds and run the workflow, and the workflow that it's running is super linter, it will:
+7. It will take few seconds and run the workflow, and the workflow that it's running is super linter, it will:
 
 Set up the job
 Pull the code from GitHub Super Linter
@@ -142,7 +142,7 @@ def bye():
 print(hello())
 ```
 
-4. Let's go ahead and save this commit it and watch to see what the Linter does 
+4. Let's go ahead and save this commit it and watch to see what the Linter does
 5. Let's refresh and we can see that it is triggered now if we just click the yellow icon, you can it's in progress check and we can just go details
 
 ![Screenshot 2024-01-31 at 13 43 23](https://github.com/julien-muke/mygitactions/assets/110755734/74d6d885-080c-463f-a061-0d54ef884a2d)
