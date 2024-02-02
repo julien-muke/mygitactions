@@ -91,21 +91,19 @@ jobs:
 
 NOTE: This directory structure needs to be exactly like this if your workflow is not triggering it's probably because the directory structure isn't named correctly
 
-
 6. Let's hop on back to the main repository click "Code" and you should notice that there's this little status icon and you can see it's yellow, basically what this is saying is it's currently running the workflow and checking the code if all the checks pass then this is going to turn green, if the checks fail then it's gonna turn red, you can actually click on that or you can click on this "Actions" tab
-
 
 ![Screenshot 2024-01-31 at 13 25 34](https://github.com/julien-muke/mygitactions/assets/110755734/cd788f0f-52a3-46fa-859b-85bcd4cabc3f)
 
 
 7.  It will take few seconds and run the workflow, and the workflow that it's running is super linter, it will:
 
-* Set up the job
-* Pull the code from GitHub Super Linter
-* Checkout the code
-* Run Super-Linter
-* Post Chechout code
-* Complete job
+Set up the job
+Pull the code from GitHub Super Linter
+Checkout the code
+Run Super-Linter
+Post Chechout code
+Complete job
 
 
 ![Screenshot 2024-01-31 at 13 30 18](https://github.com/julien-muke/mygitactions/assets/110755734/22dbf8bc-ccf3-413a-a00c-3988ff684231)
@@ -147,9 +145,7 @@ print(hello())
 4. Let's go ahead and save this commit it and watch to see what the Linter does 
 5. Let's refresh and we can see that it is triggered now if we just click the yellow icon, you can it's in progress check and we can just go details
 
-
 ![Screenshot 2024-01-31 at 13 43 23](https://github.com/julien-muke/mygitactions/assets/110755734/74d6d885-080c-463f-a061-0d54ef884a2d)
-
 
 
 6. Our Super-Linter has run and we can see that there is an error in our workflow right here on the run Super-Linter, let's go into it and i'll show you sort of how to troubleshoot these errors
