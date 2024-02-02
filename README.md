@@ -91,7 +91,7 @@ jobs:
 
 NOTE: This directory structure needs to be exactly like this if your workflow is not triggering it's probably because the directory structure isn't named correctly
 
-6. Let's hop on back to the main repository click "Code" and you should notice that there's this little status icon and you can see it's yellow, basically what this is saying is it's currently running the workflow and checking the code if all the checks pass then this is going to turn green, if the checks fail then it's gonna turn red, you can actually click on that or you can click on this "Actions" tab
+6. Let's go back to the main repository click "Code" and you should notice that there's this little status icon and you can see it's yellow, basically what this is saying is it's currently running the workflow and checking the code if all the checks pass then this is going to turn green, if the checks fail then it's going to turn red, click "Actions" tab
 
 ![Screenshot 2024-01-31 at 13 25 34](https://github.com/julien-muke/mygitactions/assets/110755734/cd788f0f-52a3-46fa-859b-85bcd4cabc3f)
 
