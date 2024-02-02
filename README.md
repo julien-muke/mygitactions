@@ -21,7 +21,7 @@ Let's go over the terminology you need to know to understand a GitHub actions wo
 
 
 - On the event that someone pushes new code it's going to run the job Super-lint
-- That job is going to run on ubuntu container hosted on github
+- That job is going to run on ubuntu container hosted on GitHub
 - Then it's going to go through two steps: the first step is to check out the code and the next step is to run the Linter 
   
 NOTE: Linter is it's just something that we use to check to make sure that our code is conforming to certain standards super linter is made up of multiple linters so it doesn't matter which code you use in your repository superlinter is going to understand it and make sure you conform to the standards of that language.
